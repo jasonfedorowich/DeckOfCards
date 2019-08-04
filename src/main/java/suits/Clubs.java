@@ -4,15 +4,23 @@ import color.Color;
 
 public class Clubs extends Suit{
 	
+	private String name;
+	private Color color;
+
+	public Clubs(){
+		this.name = "Clubs";
+		this.color = Color.BLACK;
+	}
+	
 	
 	@Override
 	public Color getColor() {
-		return Color.BLACK;
+		return color;
 	}
 	
 	@Override
 	public String toString() {
-		return "Clubs";
+		return name;
 	}
 
 }
